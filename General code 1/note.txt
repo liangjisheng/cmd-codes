@@ -1,0 +1,20 @@
+type 显示文本文件的内容
+
+ver 显示操作系统的版本
+
+vol 显示磁盘标卷和序列号
+
+xcopy 复制文件和目录
+
+calc 启动计算器
+
+certmgr.msc 证书管理程序
+
+charamp 启动字符映射表
+
+magnify 启动放大镜
+
+mobsync 同步中心
+
+
+

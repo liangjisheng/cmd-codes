@@ -1,0 +1,4 @@
+﻿ipconfig
+mode
+echo.
+echo

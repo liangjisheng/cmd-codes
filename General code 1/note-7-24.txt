@@ -1,0 +1,24 @@
+start explorer d:\	调用图形界面打开D 盘 
+
+assoc 和 ftype 
+文件关联 
+assoc 设置'文件扩展名'关联，关联到'文件类型' 
+ftype 设置'文件类型'关联，关联到'执行程序和参数' 
+当你双击一个.txt 文件时，windows并不是根据.txt 直接判断
+用 notepad.exe 打开 而是先判断.txt 属于 
+txtfile '文件类型' 再调用 txtfile 关联的命令行 
+txtfile=%SystemRoot%\system32\NOTEPAD.EXE %1 
+可以在"文件夹选项"→"文件类型"里修改这 2种关联 
+assoc           #显示所有'文件扩展名'关联 
+assoc .txt      #显示.txt 代表的'文件类型'，
+结果显示 .txt=txtfile 
+assoc .doc      #显示.doc 代表的'文件类型'，
+结果显示 .doc=Word.Document.8 
+assoc .exe      #显示.exe 代表的'文件类型'，
+结果显示 .exe=exefile 
+ftype           #显示所有'文件类型'关联 
+ftype exefile   #显示exefile 类型关联的命令行，结果显示 exefile="%1" %*  
+assoc .txt=Word.Document.8 
+设置.txt为 word 类型的文档，可以看到.txt 文件的图标都变了 
+assoc .txt=txtfile 
+恢复.txt 的正确关联 
