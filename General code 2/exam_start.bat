@@ -1,0 +1,11 @@
+@echo off
+start /min
+start /max
+rem ÉèÖÃ±êÌâ
+start "li"
+start /low
+start /normal
+start /high
+start /realtime
+start /abovenormal
+start /belownormal
